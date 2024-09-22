@@ -1,0 +1,152 @@
+\documentclass[12pt]{report}
+
+%------------------- declaring packages---------------------------------
+
+
+% styling and graphics-based
+
+\usepackage{graphicx} 
+\usepackage{emptypage}
+\usepackage{geometry}
+\usepackage{setspace}
+\usepackage{pgf}
+\usepackage{pgffor}
+\doublespacing
+
+% for figures and tables
+
+% figures:
+\usepackage{subfigure}  
+\usepackage{adjustbox}
+\usepackage{wrapfig}
+\usepackage{subfigure}
+\usepackage{rotating}
+\usepackage{lscape}
+% tables:
+\usepackage{tabularx,ragged2e,booktabs,caption}
+\usepackage{multicol,tabularx,capt-of}
+\usepackage{hhline}
+\usepackage{multirow}
+\usepackage{array}
+
+
+% for math equations
+
+\usepackage{amssymb}
+\usepackage{float}
+\usepackage{verbatim}
+\usepackage{amsmath} 
+\usepackage{amsthm}   
+% doble columna 
+\usepackage{multicol}
+
+% for acronyms and glossaries
+
+\usepackage{acronym}
+\usepackage{glossaries}
+
+
+% for hyperlinks
+
+\usepackage[round]{natbib}
+\usepackage[colorlinks = true,
+            linkcolor = black,
+            urlcolor  = blue,
+            citecolor = black,
+            anchorcolor = blue]{hyperref}
+
+\usepackage{sectsty}
+\allsectionsfont{\bfseries}
+\chapterfont{\centering\Large}
+\sectionfont{\normalsize}
+\subsectionfont{\normalsize}
+
+
+\usepackage[spanish]{babel}
+\usepackage[autostyle, spanish = mexican]{csquotes}
+\MakeOuterQuote{"}
+
+
+% header formatting
+
+\usepackage{layout}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[R]{\thepage}
+\fancyhead[L]{\textbf{\nouppercase{\rightmark}}}
+\fancyfoot[L]{}
+
+\fancypagestyle{custompagestyle}{%
+    \fancyhf{}
+    \fancyhead[R]{\thepage}
+}
+
+\fancypagestyle{noheaderfooter}{%
+    \fancyhf{} % Clear header and footer
+    \renewcommand{\headrulewidth}{0pt} % Remove header line
+}
+
+%footer formatting
+
+\interfootnotelinepenalty=10000 
+
+\usepackage{epstopdf}
+
+%----------------------------begin document-------------------------------
+
+\begin{document}
+%\frontmatter
+\pagenumbering{roman}
+
+\input{titlepage}
+\chapter*{Dedicatoria}\
+
+Para alguien
+
+\addcontentsline{toc}{chapter}{Dedication}
+
+\chapter*{Abstract}
+
+El dengue chinga mucho, especialmente al que hace la tesis
+
+\addcontentsline{toc}{chapter}{Abstract}
+
+\chapter*{Agradecimientos}
+
+A Gronda triple x ANDELE
+
+\addcontentsline{toc}{chapter}{Acknowledgements}
+
+\tableofcontents{}
+
+\listoftables{}
+
+\listoffigures{}
+
+
+\include{Acronyms}
+\thispagestyle{noheaderfooter}
+
+\pagenumbering{arabic}
+
+\include{Chapter1}
+
+\include{Chapter2}
+
+\include{Chapter3}
+
+\include{Chapter4}
+
+\include{Chapter5_conclusion}
+
+\bibliographystyle{plainnat}
+\bibliography{References}
+
+
+\appendix
+
+\include{AppendixA}
+
+
+\end{document}
