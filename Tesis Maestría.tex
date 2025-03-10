@@ -1,0 +1,380 @@
+%%%%%%%%%%%%%%%Información del trabajo%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand{\Universidad}{UNIVERSIDAD NACIONAL AUTÓNOMA DE MÉXICO} %Mantener la primera letra de cada palabra en mayúscula y lo demás en minúsculas
+\newcommand{\Programa}{PROGRAMA DE MAESTRÍA Y DOCTORADO EN CIENCIAS QUÍMICAS}
+\newcommand{\Campus}{FACULTAD DE ESTUDIOS SUPERIORES CUAUTITLÁN}%Mantener la primera letra de cada palabra en mayúscula y lo demás en minúsculas
+\newcommand{\Titulo}{Estudio experimental e \textit{in silico} de derivados tiomorfolínicos del fenol y del ácido cinámico y sus complejos de inclusión con ciclodextrinas.}
+\newcommand{\Grado}{MAESTRO EN CIENCIAS}
+\newcommand{\Autor}{DIEGO VELASCO MARTÍNEZ}
+\newcommand{\Asesor}{DR. ENRIQUE ÁNGELES ANGUIANO}
+\newcommand{\LugarDeTrabajo}{CUAUTITLÁN IZCALLI, ESTADO DE MÉXICO}
+\newcommand{\Fecha}{2023}
+
+%%%%%%%%%%%%Preámbulo del documento%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[12pt,oneside]{book} % tamaño de letra,%oneside=sin paginas en blanco en los capitulos (para pdf), twoside= paginas en blanco antes de capitulos (para impresión en ambos lados)
+\usepackage{graphicx} % paqueteria para incluir imagenes
+\usepackage{longtable,multirow,booktabs} %formato para incluir Tablas
+\usepackage{cite} % para referencias
+\usepackage[spanish,USenglish,es-tabla]{babel} % alterna inglés y español en la escritura
+\usepackage[hidelinks, colorlinks=true, linkcolor=black,  citecolor=blue]{hyperref} %elimina las casillas rojas en los hipervinculos y pone las citas en color azul y las referencias en negro
+\usepackage{float} %Mejora la posición de flotantes
+\setlength{\parskip}{1em} %Tamaño de interlineado entre parrafos
+\usepackage[utf8]{inputenc} %Codificación 
+\usepackage{fancyhdr} % Formato del texto
+\usepackage{lastpage}
+\usepackage{amssymb} 
+\usepackage{emptypage}
+\usepackage{titlesec}
+\usepackage{amsmath} 
+\usepackage{subfigure}
+\usepackage[papersize={216mm,279mm},lmargin=2cm,rmargin=2cm,top=2cm,bottom=2cm]{geometry} %Tamaño de la hoja y de los márgenes
+\usepackage{soul}
+\usepackage{color}
+\usepackage{sidecap}
+\usepackage{lscape}
+\usepackage{chemformula}
+\usepackage{titlesec}
+\usepackage{transparent}
+\usepackage{setspace}
+\usepackage[export]{adjustbox}
+\usepackage[some]{background}
+\usepackage{afterpage}
+\usepackage{array}
+\usepackage{lipsum}  %Texto de relleno, Lorem Lipsum
+\usepackage[T1]{fontenc} %Palabras con acento se copian con acento 
+ 
+%%%%%%%%%%%%%%%Justificar el texto sin cortar palabras	$$$$$$$$$$$$$$$$$$$$$
+	\tolerance=1
+	\emergencystretch=\maxdimen
+	\hyphenpenalty=10000
+	\hbadness=10000
+	
+%%%%%%%%%%%%%%% Encabezado de los capítulos antes del índice %%%%%%%%%%%%%%%%%%%%%%%%%%%
+\titleformat{\chapter}[display]{\normalfont}{}{5pt}{\Large\bfseries\filcenter} %Formato
+\titlespacing{\chapter}{0pt}{-30pt}{30pt} %Localización del encabezado
+
+\titleformat{\section}[display]
+{}{\filcenter\bfseries Sección
+	\thesection.}{0pt}{\titlerule[1pt]
+	\itshape\fillast}[{\titlerule[1pt]}]
+
+\setcounter{secnumdepth}{4}
+\newcommand\blankpage{%
+	\null
+	\thispagestyle{empty}%
+	\addtocounter{page}{-1}%
+	\newpage}
+	
+	
+	
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% INICIO DEL DOCUMENTO %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+%%%%%%%%%%%%%%%Traducción de comandos a español y otros arreglos%%%%%%%%%%%%%%%%%%%%%%%
+	\newtheorem{theorem}{Teorema}
+	\renewcommand{\contentsname}{ÍNDICE GENERAL}
+	\renewcommand{\listfigurename}{ÍNDICE DE FIGURAS}
+	\renewcommand{\listtablename}{ÍNDICE DE TABLAS}
+	\renewcommand{\partname}{Parte}
+	\renewcommand{\appendixname}{APÉNDICE}
+	\renewcommand{\figurename}{Figura}
+	\renewcommand{\tablename}{Tabla}
+	\renewcommand{\chaptername}{Capítulo} 
+	\renewcommand{\bibname}{REFERENCIAS}
+	
+	\pagestyle{fancy}
+	\fancyhead{} % clear all header fields
+	\renewcommand{\headrulewidth}{0.0mm}
+	\lfoot{} 
+	\cfoot{\thepage} 
+	\rfoot{}
+	
+	\newgeometry{left=1cm,right=1cm,top=1cm,bottom=2cm}
+	\thispagestyle{empty} % no numeramos la pagina
+		\pagenumbering{Roman}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%% Portada %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+	\begin{center} %Primera portada
+		\centering{\includegraphics[width=3.25cm]{Figure/UNAMLOGO}}
+		
+		\Large \textbf{\Universidad}\\[1cm]
+		
+		\large \textbf{\Programa}\\ [2cm]
+	
+		
+		\textsc{\Titulo}\\[2cm]
+		
+		
+		\large \textbf{TESIS}
+		
+		PARA OPTAR POR EL GRADO DE\\ [1cm]
+		
+		\Large\textbf{\Grado}\\ [2cm]
+		
+		
+		\large PRESENTA\\ 
+		Lic. DIEGO VELASCO MARTÍNEZ\\ [1.5cm]
+		
+		\large \Asesor\\
+		\Campus\\ [2.5cm]
+		
+		CIUDAD UNIVERSITARIA, SEPTIEMBRE 2025.
+		
+	\end{center}
+	\newpage
+	\thispagestyle{empty}
+		\begin{center} %Segunda portada
+			\vspace*{2cm}
+		\centering{\includegraphics[width=6.86cm]{Figure/PosgradoLOGO}}
+		
+		\Large \textbf{\Universidad}\\[1cm]
+		
+		\large \textbf{\Programa}\\ [2cm]
+		
+		
+		\textsc{\textbf{\Titulo}}\\[2cm]
+		
+		
+		\large \textbf{TESIS}
+		
+		\textbf{PARA OPTAR POR EL GRADO DE}\\ [1cm]
+		
+		\Large\textbf{\Grado}\\ [1.5cm]
+		
+		
+		\large \textbf{PRESENTA}\\ 
+	\textbf{	Lic. DIEGO VELASCO MARTÍNEZ}\\ [1.5cm]
+		
+	\includegraphics[width=6.88cm]{Figure/PosgradoLOGO2}\hspace*{1cm}Ciudad de México, 2025.
+		
+	\end{center}
+	\restoregeometry
+	\newpage
+
+	
+%%%%%%%%%%%%%%%%%%%%%%%%%%%% Jurado %%%%%%%%%%%%%%%%%%%%%%%%%%
+
+	Este trabajo fue realizado en el Laboratorio de Química Medicinal de la Facultad de Estudios Superiores Cuautitlán, Campo 1 de la Universidad Nacional Autónoma de México con el apoyo del Consejo Nacional de Humanidades, Ciencias y Tecnologías (CONAHCyT) por la beca otorgada nivel Maestría(CVU 13121649) \cite{Iomini2021}
+	
+%%%%%%%%%%%%%%%%%%%% Texto del documento %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\chapter*{} %Dedicatoria
+	\thispagestyle{empty}
+		\begin{flushright} %Dedicatoria
+	
+		\end{flushright}
+
+	\chapter*{AGRADECIMIENTOS} %Agradecimientos
+
+\thispagestyle{empty}
+Agradecimiento 1
+
+Agradecimiento 2
+
+Agradecimiento 3
+
+Agradecimiento 4
+
+Agradecimiento n
+
+	\chapter*{} %Citas
+	\thispagestyle{empty}
+		\begin{flushright} %cita 1
+			\textit{Lorem ipsum
+			\\[0.5cm]
+			-Autor.}
+		\end{flushright}
+	\vspace{3cm}
+		\begin{flushright} %cita 2
+			\textit{Lorem ipsum
+			\\[0.5cm]
+			-Autor.}
+		\end{flushright}
+	\vspace{3cm}	
+	\chapter*{} %lugar de trabajo y constancias
+	\thispagestyle{empty}
+		\begin{center} %Lugar de trabajo y pres. en congreso
+			El presente trabajo se desarrolló en el laboratorio de Química Medicinal la Facultad de Estudios Superiores Cuautitlán Campo 1 perteneciente a la Universidad Nacional Autónoma de México.
+			
+			\vspace{5cm}
+			Parte de este trabajo se presentó en:
+			
+			\vspace{1cm}
+			\textbf{2$^{do}$ Congreso Iberoamericano de Ciencia, Educación y Tecnología}\\
+			organizado por la FES Cuautitlán-UNAM del 6 al 9 de diciembre del 2022 en la modalidad de cartel (mini-video).
+		\end{center}
+	\newpage
+	\thispagestyle{empty}			
+
+\titleformat{\chapter}[frame]{\normalfont}{\filcenter \small \ CAPÍTULO \  \thechapter \ }{5pt}{\Large\bfseries\filcenter}
+%defenimos el encabezado para los capitulos
+\titlespacing{\chapter}{0pt}{-25pt}{30pt}
+%Cambia la localización del encabezado de los capítulos
+
+\small  \cleardoublepage \phantomsection
+\addcontentsline{toc}{chapter}{ÍNDICE GENERAL} \setstretch{0.85} \tableofcontents % indice de contenidos
+
+
+\cleardoublepage
+\setstretch{1}
+\phantomsection
+\addcontentsline{toc}{chapter}{ÍNDICE DE FIGURAS} % para que aparezca en el indice de contenidos
+\small	\listoffigures % indice de Figuras
+
+\cleardoublepage
+\small
+\phantomsection
+\addcontentsline{toc}{chapter}{ÍNDICE DE TABLAS} % para que aparezca en el indice de contenidos
+\listoftables % indice de Tablas
+
+\newpage
+\normalsize
+	\chapter*{ABREVIATURAS}
+	\addcontentsline{toc}{chapter}{ABREVIATURAS}
+	\begin{table}[h]
+		\centering
+		\begin{tabular}{ll}
+	
+			\textbf{Siglas 1} & \hspace{1.5cm} Significado (Inglés/Otros idiomas)\\ 
+			& \hspace{1.5cm} Significado (Traducción)\\ %Quitar esta línea si no está en otro idioma
+			
+			\textbf{Siglas 2} & \hspace{1.5cm} Significado \\
+			
+			\textbf{Siglas 3} & \hspace{1.5cm} Significado (Inglés/Otros idiomas)\\ 
+			& \hspace{1.5cm} Significado (Traducción)\\ %Quitar esta línea si no está en otro idioma
+		\end{tabular}
+	\end{table}
+	\newpage
+	
+	% encabezados
+	%\lhead[]{CAPÍTULO \ \thechapter.\ \rightmark} %impares
+	\chead[]{}
+	%\rhead[CAPÍTULO \ \thechapter. \ \leftmark]{} %pares 
+	\renewcommand{\headrulewidth}{0.5pt}
+	
+	% pie de pagina
+	\lfoot[P\'agina \rule{2pt}{0.3cm}\ \thepage]{}
+	\cfoot[]{}
+	\rfoot[]{P\'agina \rule{2pt}{0.3cm}\ \thepage}
+	\renewcommand{\footrulewidth}{0.5pt}
+	
+	% pie de pagina original
+	%\lfoot[P\'agina \thepage \hspace{1pt} de \pageref{LastPage}]{}
+	%\cfoot[]{}
+	%\rfoot[]{P\'agina \thepage \hspace{1pt} de \pageref{LastPage}}
+	%\renewcommand{\footrulewidth}{0.5pt}
+	
+	% primera pagina de un capitulo
+	\fancypagestyle{plain}{
+		\fancyhead[L]{}
+		\fancyhead[C]{}
+		\fancyhead[R]{}
+		\fancyfoot[L]{}
+		\fancyfoot[C]{}
+		\fancyfoot[R]{P\'agina \rule{2pt}{0.3cm}\ \thepage}
+		\renewcommand{\headrulewidth}{0pt}
+		\renewcommand{\footrulewidth}{0.5pt}
+	}
+	\pagestyle{fancy}
+	\fancyhead[LE]{CAPÍTULO \ \thechapter. \ \leftmark}
+	\fancyhead[RO]{\rightmark}
+	\normalsize
+	\singlespacing
+	\setlength{\parskip}{0.2cm}
+	
+	\chapter{RESUMEN}
+	\label{Ch:Resumen}
+	\markboth{RESUMEN.}{RESUMEN.}
+	\pagenumbering{arabic}
+	\setcounter{page}{1}
+	\thispagestyle{empty}
+	
+	\chapter{INTRODUCCIÓN}
+	\label{Ch:Introducción}
+	\markboth{INTRODUCCIÓN.}{INTRODUCCIÓN.}
+	
+	\chapter{ANTECEDENTES}
+	\label{Ch:Antecedentes}
+	\markboth{ANTECEDENTES.}{ANTECEDENTES.}
+		
+		\section{Ciclodextrinas}
+		\label{Sec:CDs}
+				
+			\subsection{Ciclodextrinas modificadas}
+				Debido a las limitaciones inherentes de las ciclodextrinas naturales, en los ultimos años han surgido modificaciones a las tres ciclodextrinas más usadas. 
+			\subsection{Uso de las ciclodextrinas como excipientes}
+		\section{TITULO DE LA SECCIÓN}
+		\label{Sec:Titulo2}
+			
+	
+	\chapter{OBJETIVOS}
+	\label{Ch:Objetivos}
+	\markboth{OBJETIVOS.}{OBJETIVOS.}
+		\section{OBJETIVO GENERAL.}
+			\begin{itemize}
+				\item Escribe tu objetivo general. 
+			\end{itemize}
+		\section{OBJETIVOS PARTICULARES.}
+			\begin{itemize}	
+				\item Objetivo particular 1.
+				\item Objetivo particular 2.
+				\item Objetivo particular 3.
+			\end{itemize}
+			
+	\chapter{METODOLOGÍA}
+	\label{Ch:Metodología}
+	\markboth{METODOLOGÍA.}{METODOLOGÍA.}
+		
+		\section{TITULO DE LA SECCIÓN}
+		\label{Sec:Titulo}
+			
+		\section{TITULO DE LA SECCIÓN}
+		\label{Sec:Titulo2}
+		
+	\chapter{RESULTADOS Y ANÁLISIS}
+	\label{Ch:Resultados}
+	\markboth{RESULTADOS Y ANÁLISIS.}{RESULTADOS Y ANÁLISIS.}
+	
+		\section{TITULO DE LA SECCIÓN}
+		\label{Sec:Titulo}
+	
+		\section{TITULO DE LA SECCIÓN}
+		\label{Sec:Titulo2}
+	
+	\chapter{CONCLUSIONES}
+	\label{Ch:Conclusiones}
+	\markboth{CONCLUSIONES.}{CONCLUSIONES.}
+	
+	\chapter{PERSPECTIVAS}
+	\label{Ch:Perspectivas}
+	\markboth{PERSPECTIVAS.}{PERSPECTIVAS.}
+	
+%%%%%%%%%%%%%%%%%%%%% REFERENCIAS %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\thispagestyle{empty}
+		\cleardoublepage \phantomsection
+		\fontsize{11}{11}\selectfont
+		\addcontentsline{toc}{chapter}{REFERENCIAS}
+		\bibliographystyle{apalike-es} %apalike-es
+		\markboth{REFERENCIAS.}{REFERENCIAS.}
+		\fancyhead[LE]{REFERENCIAS.}
+		\fancyhead[RO]{}
+		\bibliography{tesisss}
+		\newpage
+	\thispagestyle{empty}
+	
+%%%%%%%%%%%%%%%%%%%%%%%%%%% APÉNDICES %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\appendix
+	\fontsize{12}{14}\selectfont
+	\titleformat{\chapter}[frame]{\normalfont}{\filcenter \small \ APÉNDICE \  \thechapter \ }{5pt}{\Large\bfseries\filcenter} %defenimos el encabezado para los apéndices
+	\fancyhead[LE]{APÉNDICE\ \thechapter.\ \rightmark} %pares
+	\chead[]{}
+	\fancyhead[RO]{} %impares 
+	\renewcommand{\headrulewidth}{0.5pt}
+	
+
+	\chapter{TITULO DEL APÉNDICE}
+	\markboth{APÉNDICE.}{APÉNDICE.}
+	\label{Apx:APÉNDICE}
+	
+	
+	
+\end{document}

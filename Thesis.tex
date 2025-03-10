@@ -58,6 +58,9 @@
             anchorcolor = blue]{hyperref}
 
 \usepackage{sectsty}
+\usepackage{titlesec}
+
+
 \allsectionsfont{\bfseries}
 \chapterfont{\centering\Large}
 \sectionfont{\normalsize}
@@ -106,6 +109,7 @@
 \usepackage{lipsum}
 \usepackage[justification=centering]{caption}
 \usepackage{fontawesome5}
+
 %----------------------------begin document-------------------------------
 
 \begin{document}
@@ -116,24 +120,26 @@
 
 
 \pagenumbering{roman}  % Usa números romanos para las páginas preliminares
-\setcounter{page}{3}
+\setcounter{page}{5}
 \chapter*{Dedicatoria}\
 
 Para alguien
 
 \addcontentsline{toc}{chapter}{Dedicatoria}
 
+
+
+\chapter*{Agradecimientos}
+
+A Gronda triple x ANDELE
+\lipsum[2-2]
+\addcontentsline{toc}{chapter}{Agradecimientos}
+
 \chapter*{Abstract}
 
 El dengue chinga mucho, especialmente al que hace la tesis $\beta$-OG \ac{LQM}
 
 \addcontentsline{toc}{chapter}{Abstract}
-
-\chapter*{Agradecimientos}
-
-A Gronda triple x ANDELE
-\lipsum
-\addcontentsline{toc}{chapter}{Agradecimientos}
 
 \tableofcontents{}
 
@@ -156,6 +162,7 @@ A Gronda triple x ANDELE
 
 %Antecedentes%
 \include{Chapter1}
+
 %Objetivos%
 \include{Objetivos}
 %Metodología%
