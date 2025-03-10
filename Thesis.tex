@@ -1,4 +1,4 @@
-\documentclass[12pt]{report}
+\documentclass[11.5pt]{report}
 
 %------------------- declaring packages---------------------------------
 
@@ -44,11 +44,13 @@
 
 \usepackage{acronym}
 \usepackage{glossaries}
-
+%%%%%PRUEBA%%%%
 
 % for hyperlinks
+\usepackage{textgreek}
 
-\usepackage[round]{natbib}
+
+%\usepackage{natbib}
 \usepackage[colorlinks = true,
             linkcolor = black,
             urlcolor  = blue,
@@ -62,7 +64,7 @@
 \subsectionfont{\normalsize}
 
 
-\usepackage[spanish]{babel}
+\usepackage[spanish, mexico]{babel}
 \usepackage[autostyle, spanish = mexican]{csquotes}
 \MakeOuterQuote{"}
 
@@ -87,51 +89,76 @@
     \renewcommand{\headrulewidth}{0pt} % Remove header line
 }
 
+
 %footer formatting
 
 \interfootnotelinepenalty=10000 
 
 \usepackage{epstopdf}
-
+%usas las citas con titulo 
+%\usepackage[articletitle=true]{achemso}
+%%%%%%%%%%%% usar las citas pero sin titulo  %%%%%%
+\usepackage{achemso} 
+%\usepackage{libertine}
+%\usepackage[superscript]{cite}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lipsum}
+\usepackage[justification=centering]{caption}
+\usepackage{fontawesome5}
 %----------------------------begin document-------------------------------
 
 \begin{document}
 %\frontmatter
-\pagenumbering{roman}
+    % Establece la numeración en 3 para que la siguiente sea 4
 
 \input{titlepage}
+
+
+\pagenumbering{roman}  % Usa números romanos para las páginas preliminares
+\setcounter{page}{3}
 \chapter*{Dedicatoria}\
 
 Para alguien
 
-\addcontentsline{toc}{chapter}{Dedication}
+\addcontentsline{toc}{chapter}{Dedicatoria}
 
 \chapter*{Abstract}
 
-El dengue chinga mucho, especialmente al que hace la tesis
+El dengue chinga mucho, especialmente al que hace la tesis $\beta$-OG \ac{LQM}
 
 \addcontentsline{toc}{chapter}{Abstract}
 
 \chapter*{Agradecimientos}
 
 A Gronda triple x ANDELE
-
-\addcontentsline{toc}{chapter}{Acknowledgements}
+\lipsum
+\addcontentsline{toc}{chapter}{Agradecimientos}
 
 \tableofcontents{}
 
+\cleardoublepage
+\addcontentsline{toc}{chapter}{Indice de tablas}
 \listoftables{}
 
+\cleardoublepage
+\addcontentsline{toc}{chapter}{Indice de figuras}
 \listoffigures{}
 
-
+\cleardoublepage
+\addcontentsline{toc}{chapter}{Abreviaturas}
 \include{Acronyms}
+
 \thispagestyle{noheaderfooter}
 
 \pagenumbering{arabic}
 
-\include{Chapter1}
 
+%Antecedentes%
+\include{Chapter1}
+%Objetivos%
+\include{Objetivos}
+%Metodología%
 \include{Chapter2}
 
 \include{Chapter3}
@@ -140,8 +167,9 @@ A Gronda triple x ANDELE
 
 \include{Chapter5_conclusion}
 
-\bibliographystyle{plainnat}
-\bibliography{References}
+
+%\bibliographystyle{achemso} 
+\bibliography{tesisss}
 
 
 \appendix
