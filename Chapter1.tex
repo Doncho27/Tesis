@@ -40,44 +40,11 @@ La imagen \ref{BaltimoreClass} B muestra la unión entre la clasificación de Ba
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=\textwidth]{Figure/BaltimoreClass.png}
-	\caption{A) Clasificaciones propuestas por Baltimore. B) Visualización de la clasificación de Baltimore en unión con la clasificación Taxonómica (Imagenes modificadas)}
+	\caption[Clasificación de Baltimore]{A) Clasificaciones propuestas por Baltimore. B) Visualización de la clasificación de Baltimore en unión con la clasificación Taxonómica (Imagenes modificadas)}
 	\label{BaltimoreClass}
 \end{figure}
    
-%  \begin{table}[h]
-%    	\centering
-%    	\begin{tabular}{ccccc}
-%    		\toprule
-%    		Columna 1 & Columna 2 & Columna 3 & Columna 4 & Columna 5 \\
-%    		\midrule
-%    		A11 & A12 & A13 & A14 & A15 \\
-%    		A21 & A22 & A23 & A24 & A25 \\
-%    		A31 & A32 & A33 & A34 & A35 \\
-%    		A41 & A42 & A43 & A44 & A45 \\
-%    		\bottomrule
-%    	\end{tabular}
-%    	\caption{Ejemplo de tabla en LaTeX}
-%    	\label{tab:ejemplo}
-%    \end{table}$$$
-%    
 
-%iuasgyusagd 
-%
-%\begin{table}[H]
-%    \centering
-%    \begin{tabular}{|c|c|c|}
-%        \hline
-%        \multirow{2}{*}{\textbf{A}} & \multicolumn{2}{c|}{\textbf{B}} \\ \cline{2-3} 
-%                                    & \textbf{C}       & \textbf{D}       \\ \hline
-%        43 & 67 & 21 \\ \hline
-%        78 & 32 & 56 \\ \hline
-%        11 & 89 & 45 \\ \hline
-%        55 & 76 & 33 \\ \hline
-%        25 & 48 & 94 \\ \hline
-%    \end{tabular}
-%    \caption{Multirow and Multicolumn Table with Random Data}
-%    \label{tab:demo_table}
-%\end{table}
 \section{Flavivirus}
 La familia \textit{Flaviviridae} comprende cuatro géneros: \textit{Hepacivirus}, \textit{Orthoflavivirus}, \textit{Pegivirus} y \textit{Pestivirus}, que incluyen un total de 97 especies. Varios de estos virus son patógenos para los humanos, como el \textit{Orthoflavivirus nilense} (anteriormente conocido como \ac{WNV}), el \ac{YFV}, el \ac{JEV}, el \ac{DENV} y el \ac{ZIKV}. Se trata de virus de ARN de cadena sencilla en sentido positivo, con una longitud de aproximadamente 11 kb. Su genoma presenta un capuchón tipo 1 en el extremo 5' y carece de una cola poli-A en el extremo 3'. Alrededor de las regiones codificantes de proteínas, se encuentran dos áreas no traducidas: una de aproximadamente 100 nucleótidos en el extremo 5' y otra de 400-700 nucleótidos en el extremo 3'. Estos virus están envueltos en una membrana bilipídica derivada de las células del hospedador, y su virión tiene un diámetro aproximado de 50 nm. El material genético de 1 \ac{ORF} codifica una única proteína que, posteriormente, es escindida por diferentes proteasas del virus o del hospedador como lo muestra la figura \ref{Poliprot}. Tres de estas proteínas son estructurales (\ac{C}, \ac{E} y \ac{prM}), mientras que siete son de carácter \ac{NS} (NS1, NS2A, NS2B, NS3, NS4A, NS4B, NS5). La cápside está cubierta por una membrana derivada del hospedador, y en su superficie exterior se encuentran 90 homodímeros de las proteínas \ac{E} y \ac{M}, ensambladas en una simetría icosaédrica.\cite{Barrows2018,VanLeur2021}
 
@@ -89,19 +56,31 @@ La familia \textit{Flaviviridae} comprende cuatro géneros: \textit{Hepacivirus}
 \end{figure}
 La proteína \ac{C} es el componente principal al interior de la membrana, con varias copias, se trata de una proteína básica con carga asimétrica de 12kDa donde la región con mayor polaridad interacciona con el material genético mientras que la región apolar lo hace con la membrana. Aunque conserva su estructura y función entre las distintas especies, es de las proteínas con mayor variabilidad genética. Cada monómero contiene al rededor de 3 a 4 hélices alfa, en conjunto con el \ac{ARN} viral forma la nucleocápside de un tamaño aproximado de 30nm.  \cite{Sotcheff2020, VanLeur2021} 
 
-La proteína \ac{prM} durante el ensamblaje del virus se encuentra como una sola proteína, que durante el proceso de maduración del virus mientras transita el Golgi esta es escindida por la proteína furina.  \cite{Bernardo-Menezes2022, Majowicz2023}  
+La proteína \ac{prM} durante el ensamblaje del virus se encuentra como una sola proteína con regiones transmembranales y dominios que cubren a la proteína \ac{E} de una fusión prematura, durante la formación del virión la proteína \ac{prM} se asocia con la proteína \ac{E} de forma trimérica, durante el proceso de maduración del virus mientras transita el Golgi esta es escindida por la proteína furina del hospedero transformando la proteína \ac{prM} en dos segmentos, la proteína \ac{pr} y \ac{M}, donde en el virión maduro la proteína M se encuentra de forma homodimérica consigo misma y como heterotetrámero con la proteína \ac{E}, este proceso de maduración resulta ser ineficiente teniendo como consecuencia la presencia de viriones inmaduros o parcialmente maduros, que pueden afectar en el reconocimiento de anticuerpos virales.  \cite{Bernardo-Menezes2022, Majowicz2023,Dowd2014, Mukherjee2016a}
 
+La característica superficie presente en los viriones de los flavivirus se debe a la proteína \ac{E} que se encuentra agrupada debido a las simetría icosaédrica del virus en 30 zonas llamadas "balsas" que están constituidas por 6 unidades de la proteína \ac{E} o 3 homodímeros, la proteína se encuentra dividida en dos regiones; la primera una región de tallo-membrana compuesta principalmente por hélices en el virus maduro y una segunda región llamada dominio ectosoluble esta dividida en tres dominios (DI, DII y DIII), contiene una región altamente hidrofóbica que se conoce como el péptido de fusión, zona de suma importancia en la entrada del virus que sirve como anclaje en la membrana del hospedero, siendo la zona mas conservada entre los distintos flavivirus, por otro lado la proteína \ac{E} responsable del tropismo viral, contiene sitios de glucosilación necesarios en el proceso de adhesión celular así como enlaces disulfuro importantes para el plegamiento de los distintos dominios, en el virión maduro se encuentra dispuesto formando 90 \ac{M}/\ac{E} heterotetrámeros, representado en la figura \ref{proteinasflav}A .\cite{Barrows2018,VanLeur2021,Seligman2008, Marzinek2015, Majowicz2023}
+
+Las funciones de las \ac{NS} son muy diversas desde la activación de la ruta NF-$\kappa$B o el inflamasoma y por eso solo se harán un breve resumen de sus funciones. Las proteínas \ac{NS} de los \textit{Flavivirus} son en su mayoría proteasas, como lo muestra la figura \ref{Poliprot} algunas proteínas sirven como proteasas de la poliproteína. La proteína \ac{NS}1 es abundante en el suero de pacientes infectados, es multifuncional se puede encontrar como monómero en el \ac{RE} en la replicación o como oligómero en otras etapas de la infección.\cite{VanLeur2021,Latanova2022}
+  
 Donde principalmente se ha buscado como estrategia para combatirlas el uso de vacunas, las cuales han funcionado de forma profiláctica en algunos virus como \ac{YFV} y \ac{JEV}. Por lo que para el resto las estrategias se han limitado a la prevención, es decir evitar el contacto con los vectores principales, los cuales son los mosquitos.\cite{VanLeur2021} 
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=\textwidth]{Figure/Proteinas_flav}
+	\caption{A)Proteínas estructurales y modelo de ensamble del complejo C-M-E. B)Proteínas no estructurales}
+	\label{proteinasflav}
+\end{figure}
+
 \subsection{Ciclo de replicación}
 El tamaño y forma de los virus tiene implicaciones en su ciclo de replicación 
 \subsection{Infecciones Transmitidas por Vectores}
 \section{Virus del Dengue "DENV"}
 \ac{DENV}
-This is an example of demo citation of figure  \cite{Iomini2021}
+This is an example of demo citation of figure  \cite{Iomini2021} \cite{Bakan2011}
     \subsection{Enfermedades Tropicales Desatendidas}
     \subsection{Serotipos}
 \section{Virus del Zika "ZIKV"}
 \ac{ZIKV}
 \section{Inhibidores de Entrada}
 \section{Análogos del Ácido Cinámico }
-aaaaaaaaaaaaaaaaaaa xD
+

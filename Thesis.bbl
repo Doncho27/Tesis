@@ -1,0 +1,211 @@
+\providecommand{\latin}[1]{#1}
+\makeatletter
+\providecommand{\doi}
+  {\begingroup\let\do\@makeother\dospecials
+  \catcode`\{=1 \catcode`\}=2 \doi@aux}
+\providecommand{\doi@aux}[1]{\endgroup\texttt{#1}}
+\makeatother
+\providecommand*\mcitethebibliography{\thebibliography}
+\csname @ifundefined\endcsname{endmcitethebibliography}
+  {\let\endmcitethebibliography\endthebibliography}{}
+\begin{mcitethebibliography}{23}
+\providecommand*\natexlab[1]{#1}
+\providecommand*\mciteSetBstSublistMode[1]{}
+\providecommand*\mciteSetBstMaxWidthForm[2]{}
+\providecommand*\mciteBstWouldAddEndPuncttrue
+  {\def\EndOfBibitem{\unskip.}}
+\providecommand*\mciteBstWouldAddEndPunctfalse
+  {\let\EndOfBibitem\relax}
+\providecommand*\mciteSetBstMidEndSepPunct[3]{}
+\providecommand*\mciteSetBstSublistLabelBeginEnd[3]{}
+\providecommand*\EndOfBibitem{}
+\mciteSetBstSublistMode{f}
+\mciteSetBstMaxWidthForm{subitem}{(\alph{mcitesubitemcount})}
+\mciteSetBstSublistLabelBeginEnd
+  {\mcitemaxwidthsubitemform\space}
+  {\relax}
+  {\relax}
+
+\bibitem[Flint \latin{et~al.}(2020)Flint, Racaniello, Rall, Hatziioannou, and
+  {Anna Marie Skalka}]{Racaniello2020}
+Flint,~J.; Racaniello,~V.; Rall,~G.; Hatziioannou,~T.; {Anna Marie Skalka}
+  \emph{{Principles of virology}}, 5th ed.; ASM PRESS, 2020; Vol. 1
+  Molecula\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Rossmann(2013)]{Rossmann2013}
+Rossmann,~M.~G. \emph{Q. Rev. Biophys.} \textbf{2013}, \emph{46},
+  133--180\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Van(2022)]{Van2022}
+Van,~G.~W. \emph{Viruses Intim. Invaders} \textbf{2022}, 1--341\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Idris \latin{et~al.}(2016)Idris, Muharram, and Diah]{Idris2016}
+Idris,~F.; Muharram,~S.~H.; Diah,~S. \emph{Arch. Virol.} \textbf{2016},
+  \emph{161}, 1751--1760\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Baltimore(1971)]{Baltimore1971}
+Baltimore,~D. \emph{Bacteriol. Rev.} \textbf{1971}, \emph{35}, 235--241\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Koonin \latin{et~al.}(2021)Koonin, Krupovic, and Agol]{Koonin2021}
+Koonin,~E.~V.; Krupovic,~M.; Agol,~V.~I. \emph{Microbiol. Mol. Biol. Rev.}
+  \textbf{2021}, \emph{85}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Siddell \latin{et~al.}(2023)Siddell, Smith, Adriaenssens,
+  Alfenas-Zerbini, Dutilh, Garcia, Junglen, Krupovic, Kuhn, Lambert, Lefkowitz,
+  {\L}obocka, Mushegian, Oksanen, Robertson, Rubino, Sabanadzovic, Simmonds,
+  Suzuki, {Van Doorslaer}, Vandamme, Varsani, and {Murilo
+  Zerbini}]{Siddell2023}
+Siddell,~S.~G. \latin{et~al.}  \emph{J. Gen. Virol.} \textbf{2023}, \emph{104},
+  001840\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Barrows \latin{et~al.}(2018)Barrows, Campos, Liao, Prasanth,
+  Soto-Acosta, Yeh, Schott-Lerner, Pompon, Sessions, Bradrick, and
+  Garcia-Blanco]{Barrows2018}
+Barrows,~N.~J.; Campos,~R.~K.; Liao,~K.-C.; Prasanth,~K.~R.; Soto-Acosta,~R.;
+  Yeh,~S.-C.; Schott-Lerner,~G.; Pompon,~J.; Sessions,~O.~M.; Bradrick,~S.~S.;
+  Garcia-Blanco,~M.~A. \emph{Chem. Rev.} \textbf{2018}, \emph{118},
+  4448--4482\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[van Leur \latin{et~al.}(2021)van Leur, Heunis, Munnur, and
+  Sanyal]{VanLeur2021}
+van Leur,~S.~W.; Heunis,~T.; Munnur,~D.; Sanyal,~S. \emph{Virulence}
+  \textbf{2021}, \emph{12}, 2814--2838\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Sotcheff and Routh(2020)Sotcheff, and Routh]{Sotcheff2020}
+Sotcheff,~S.; Routh,~A. \emph{Pathog. 2020, Vol. 9, Page 42} \textbf{2020},
+  \emph{9}, 42\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Bernardo-Menezes \latin{et~al.}(2022)Bernardo-Menezes, Agrelli,
+  de~Oliveira, de~Moura, Crovella, and Brand{\~{a}}o]{Bernardo-Menezes2022}
+Bernardo-Menezes,~L.~C.; Agrelli,~A.; de~Oliveira,~A. S. L.~E.;
+  de~Moura,~R.~R.; Crovella,~S.; Brand{\~{a}}o,~L. A.~C. \emph{Rev. Soc. Bras.
+  Med. Trop.} \textbf{2022}, \emph{55}, e0263--2022\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Majowicz \latin{et~al.}(2023)Majowicz, Narayanan, Moustafa, Bator,
+  Hafenstein, and Jose]{Majowicz2023}
+Majowicz,~S.~A.; Narayanan,~A.; Moustafa,~I.~M.; Bator,~C.~M.;
+  Hafenstein,~S.~L.; Jose,~J. \emph{npj Viruses} \textbf{2023}, \emph{1},
+  4\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Dowd \latin{et~al.}(2014)Dowd, Mukherjee, Kuhn, and Pierson]{Dowd2014}
+Dowd,~K.~A.; Mukherjee,~S.; Kuhn,~R.~J.; Pierson,~T.~C. \emph{J. Virol.}
+  \textbf{2014}, \emph{88}, 11726--11737\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Mukherjee \latin{et~al.}(2016)Mukherjee, Sirohi, Dowd, Chen, Diamond,
+  Kuhn, and Pierson]{Mukherjee2016a}
+Mukherjee,~S.; Sirohi,~D.; Dowd,~K.~A.; Chen,~Z.; Diamond,~M.~S.; Kuhn,~R.~J.;
+  Pierson,~T.~C. \emph{Virology} \textbf{2016}, \emph{497}, 33\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Seligman(2008)]{Seligman2008}
+Seligman,~S.~J. \emph{Virol. J.} \textbf{2008}, \emph{5}, 1--10\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Marzinek \latin{et~al.}(2016)Marzinek, Lakshminarayanan, Goh, Huber,
+  Panzade, Verma, and Bond]{Marzinek2015}
+Marzinek,~J.~K.; Lakshminarayanan,~R.; Goh,~E.; Huber,~R.~G.; Panzade,~S.;
+  Verma,~C.; Bond,~P.~J. \emph{Sci. Rep.} \textbf{2016}, \emph{6}, 19160\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Latanova \latin{et~al.}(2022)Latanova, Starodubova, and
+  Karpov]{Latanova2022}
+Latanova,~A.; Starodubova,~E.; Karpov,~V. \emph{Viruses 2022, Vol. 14, Page
+  1808} \textbf{2022}, \emph{14}, 1808\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Iomini \latin{et~al.}(2021)Iomini, Parodi, Farina, Saldarriaga,
+  Liblik, Mendoza, {Sosa Liprandi}, Wyss, Mart{\'{i}}nez-Sell{\'{e}}s, Burgos,
+  and Baranchuk]{Iomini2021}
+Iomini,~P.~A.; Parodi,~J.~B.; Farina,~J.~M.; Saldarriaga,~C.; Liblik,~K.;
+  Mendoza,~I.; {Sosa Liprandi},~A.; Wyss,~F.; Mart{\'{i}}nez-Sell{\'{e}}s,~M.;
+  Burgos,~L.~M.; Baranchuk,~A. \emph{Medicina (B. Aires).} \textbf{2021},
+  \emph{81}, 808--816\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Bakan \latin{et~al.}(2011)Bakan, Meireles, and Bahar]{Bakan2011}
+Bakan,~A.; Meireles,~L.~M.; Bahar,~I. \emph{Bioinformatics} \textbf{2011},
+  \emph{27}, 1575--1577\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Barzon \latin{et~al.}(2016)Barzon, Trevisan, Sinigaglia, Lavezzo, and
+  Pa{\`{i}}]{Barzon2016}
+Barzon,~L.; Trevisan,~M.; Sinigaglia,~A.; Lavezzo,~E.; Pa{\`{i}},~G. \emph{FEMS
+  Microbiol. Lett.} \textbf{2016}, \emph{363}, 202\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Mart{\'{i}}nez-Soriano \latin{et~al.}(2015)Mart{\'{i}}nez-Soriano,
+  Mac{\'{i}}as-P{\'{e}}rez, Vel{\'{a}}zquez, Camacho-Enriquez,
+  Pretel{\'{i}}n-Castillo, Ruiz-S{\'{a}}nchez, Abrego-Reyes,
+  Villa-Trevi{\~{n}}o, and Angeles]{pablin}
+Mart{\'{i}}nez-Soriano,~P.~A.; Mac{\'{i}}as-P{\'{e}}rez,~J.~R.;
+  Vel{\'{a}}zquez,~A.~M.; Camacho-Enriquez,~B. d.~C.;
+  Pretel{\'{i}}n-Castillo,~G.; Ruiz-S{\'{a}}nchez,~M.~B.; Abrego-Reyes,~V.~H.;
+  Villa-Trevi{\~{n}}o,~S.; Angeles,~E. \emph{Green Sustain. Chem.}
+  \textbf{2015}, \emph{05}, 81--91\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[LeBlanc \latin{et~al.}(2012)LeBlanc, Par{\'{e}}, Jean-Fran{\c{c}}ois,
+  H{\'{e}}bert, Surette, and Touaibia]{LeBlanc2012}
+LeBlanc,~L.; Par{\'{e}},~A.; Jean-Fran{\c{c}}ois,~J.; H{\'{e}}bert,~M.;
+  Surette,~M.; Touaibia,~M. \emph{Molecules} \textbf{2012}, \emph{17},
+  14637--14650\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\end{mcitethebibliography}

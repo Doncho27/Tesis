@@ -1,0 +1,68 @@
+This is BibTeX, Version 0.99d
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: Thesis.aux
+Reallocating 'name_of_file' (item size: 1) to 8 items.
+The style file: achemso.bst
+Reallocating 'name_of_file' (item size: 1) to 13 items.
+A level-1 auxiliary file: Acronyms.aux
+Reallocating 'name_of_file' (item size: 1) to 13 items.
+A level-1 auxiliary file: Chapter1.aux
+Reallocating 'name_of_file' (item size: 1) to 14 items.
+A level-1 auxiliary file: Objetivos.aux
+Reallocating 'name_of_file' (item size: 1) to 13 items.
+A level-1 auxiliary file: Chapter2.aux
+Reallocating 'name_of_file' (item size: 1) to 13 items.
+A level-1 auxiliary file: Chapter3.aux
+Reallocating 'name_of_file' (item size: 1) to 13 items.
+A level-1 auxiliary file: Chapter4.aux
+Reallocating 'name_of_file' (item size: 1) to 24 items.
+A level-1 auxiliary file: Chapter5_conclusion.aux
+Reallocating 'name_of_file' (item size: 1) to 11 items.
+Reallocating 'name_of_file' (item size: 1) to 8 items.
+Reallocating 'name_of_file' (item size: 1) to 14 items.
+A level-1 auxiliary file: AppendixA.aux
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Database file #1: acs-Thesis.bib
+Database file #2: tesisss.bib
+achemso 2025-01-29 v3.13h
+You've used 23 entries,
+            2538 wiz_defined-function locations,
+            967 strings with 14540 characters,
+and the built_in function-call counts, 8737 in all, are:
+= -- 616
+> -- 639
+< -- 12
++ -- 248
+- -- 227
+* -- 974
+:= -- 1206
+add.period$ -- 22
+call.type$ -- 23
+change.case$ -- 5
+chr.to.int$ -- 4
+cite$ -- 23
+duplicate$ -- 486
+empty$ -- 505
+format.name$ -- 246
+if$ -- 1611
+int.to.chr$ -- 0
+int.to.str$ -- 1
+missing$ -- 0
+newline$ -- 160
+num.names$ -- 66
+pop$ -- 51
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 0
+skip$ -- 23
+stack$ -- 0
+substring$ -- 431
+swap$ -- 582
+text.length$ -- 45
+text.prefix$ -- 0
+top$ -- 1
+type$ -- 155
+warning$ -- 0
+while$ -- 83
+width$ -- 0
+write$ -- 291
